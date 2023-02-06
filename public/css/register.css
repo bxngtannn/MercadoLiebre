@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Roboto;
+    background-color:#ebebeb;
+}
+
+.header{
+    background-color:#EAC926;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 500px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.barrabusq{
+    position: relative;
+    width: 430px;
+}
+
+.barrabusq p input{
+    width: 400px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.barrabusq p i{
+    position: absolute;
+    right: 45px;
+    font-size: 15px;
+    top: 15px;
+}
+
+.textoHead{
+    font-size: 18px;
+    margin: 3px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.login{
+    display: none;
+}
+
+
+
+.burger-menu{
+    display: flex;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.intereses{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.type-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.type-user label{
+    margin: 5px;
+}
+
+.form .buttons input{
+    width: 100px;
+    margin: 10px;
+    background-color: #0044aa;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+}
+
+footer article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .arriba{
+    display: flex;
+    flex-direction: column;
+}
+
+.color{
+    color: #0044aa;
+    font-size: 25px;
+}
+
+.color:hover{
+    transition: 1s;
+    color: #0a0264;
+}
+
+
+
+@media (min-width: 361px) {
+
+    .login{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+    
+}
+
+
+@media (min-width: 769px) {    
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .arriba{
+        display: flex;
+        flex-direction: row;
+    }
+    .abajo h3.descripcionF {
+        text-align: center;
+        margin: 20px;
+    }
+}
