@@ -14,15 +14,16 @@ body{
     background-color:#EAC926;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo{
-    width: 500px;
+    width: 300px;
 }
 
 .logo img{
@@ -34,14 +35,14 @@ body{
     width: 430px;
 }
 
-.barrabusq p input{
+.input{
     width: 400px;
     height: 40px;
     border: 0;
     border-radius: 10px;
 }
 
-.barrabusq p i{
+.lupa{
     position: absolute;
     right: 45px;
     font-size: 15px;
@@ -63,10 +64,24 @@ a{
     display: none;
 }
 
-
+.login-mob{
+    display: flex;
+    justify-content: center;
+}
 
 .burger-menu{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c54bf;
+    border-radius: 5px;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+} 
+
+.burger-menu .burger{
+    font-size: 40px;
 }
 
 main{
@@ -164,15 +179,13 @@ i.fa-solid.fa-truck.envio:hover{
     color: rgba(0, 0, 0, 0.437);
 }
 
-.titular{
-    font-size: 24px;
-}
-
 footer article{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 20px 15px;
+    margin-bottom: 0;
 }
 
 footer .arriba{
@@ -185,23 +198,15 @@ footer .arriba{
     font-size: 25px;
 }
 
-.color:hover{
+footer:hover .color{
     transition: 1s;
-    color: #0a0264;
+    color: #c1b400;
 }
 
 
 
 @media (min-width: 361px) {
-    .login{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .burger-menu{
-        display: none;
-    }
-    
+
 }
 
 
@@ -225,5 +230,27 @@ footer .arriba{
     .abajo h3.descripcionF {
         text-align: center;
         margin: 20px;
+    }
+    .login{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .login ul{
+        display: flex;
+        align-items: center;
+    }
+    li{
+        margin: 10px;
+        list-style: none;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
